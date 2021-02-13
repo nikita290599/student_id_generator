@@ -25,11 +25,14 @@ $('button').on('click', function () {
     // alert(name);
     // $("#idCard").addClass('idClass');
     let src= $("#blah").attr('src');
-    $(".idImage").css('background-image', "url(" + src + ")");
+   
+    $(".image").css('background-image', "url(" + src + ")");
     
 
     $(".idContent").html("<b>Name:</b>  "+ name+"<br><br><b>College:</b> "+ college+"<br><br><b>Location:  </b>"+ location );
-    
+    $(".idContent").addClass("idContentAfter");
+    $(".idImage").addClass("idImageAfter");
+    $(".idClass").addClass("idClassAfter");
 
     return false;
 

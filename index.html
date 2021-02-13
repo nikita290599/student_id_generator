@@ -11,6 +11,10 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+ crossorigin="anonymous"> 
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -27,40 +31,41 @@
   </head>
   <body>
     <div class="containerClass">
-      <h1 class="btn btn-large btn-primary heading">ID Card Generator</h1>
+      <h1 class="btn btn-x-large bg-info heading">ID Card Generator</h1>
       <div class="frame">
-        <div class='left'>
+        <div class='left '>
           <form runat="server">
             <div class="form-group">
               <h4>Enter Student details</h4>
               <label for="name">Enter Name: </label>
-              <input type="text" class="form-control" id="name"  placeholder="Ramesh yadav">
-              
+              <input type="text" class="form-control" id="name" placeholder="Ramesh yadav">
+    
             </div>
             <div class="form-group">
               <label for="college">Enter College Name</label>
               <input type="text" class="form-control" id="college" placeholder="I.I.T">
             </div>
-            
+    
             <div class="form-group">
               <label for="location">Enter Location</label>
               <input type="text" class="form-control" id="location" placeholder="Mumbai">
             </div>
             <div class="form-group">
               <label for="image">Enter student's Picture</label>
-              <input type="file" class="form-control"  id="imageInput" accept="image/x-png,image/gif,image/jpeg">
-              <img id ="blah" src="#" alt="" width='100px'/>
+              <input type="file" class="form-control" id="imageInput" accept="image/x-png,image/gif,image/jpeg">
+              <img id="blah" src="#" alt="" width='100px' />
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-
+            <button type="submit" class="btn btn-info">Submit</button>
+    
           </form>
         </div>
         <div class='right'>
-          <div id="idCard" class='idClass'>
-            <div class="idImage"></div>
+          <div id="idCard" class='idClass '>
+            <div class="idImage ">
+              <div class="image"></div>
+            </div>
             <div class="idContent">
-              
-
+    
             </div>
           </div>
         </div>
